@@ -35,8 +35,8 @@ cacheSolve <- function(x, ...) {
         }
         
         # If not, calculate the inverse 
-        Ma = x$get()
-        inver = solve(Ma, ...)
+        Ma <- x$get()
+        inver <- solve(Ma, ...)
         x$setinver(inver)
         
         return(inver)
